@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- The X-UA-Compatible meta tag allows web authors to choose what version of Internet Explorer the page should be rendered as. This example tells Internet Explorer to display a webpage in IE=edge mode, if possible. -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	    <!-- Specifies the character encoding for the HTML document. popular values : UTF-8, ISO-8859-1 ( Character encoding for Unicode, Character encoding for the Latin alphabet) -->  
+		<meta charset="UTF-8">
+
+		<title>Title of the document</title>
+
+		<link href="assets/css/styles.css" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<header class="compact">
+			
+		</header>
+
+		<div class="main-content">
+
+			<div class="all-products page">
+
+				<div class="filters">
+					<div class="filter-criteria">
+						<span>Manufacturer</span>
+						<label><input type="checkbox" name="manufacturer" value="apple">Apple</label>
+						<label><input type="checkbox" name="manufacturer" value="samsung">Samsung</label>
+						<label><input type="checkbox" name="manufacturer" value="htc">HTC</label>
+						<label><input type="checkbox" name="manufacturer" value="nokia">Nokia</label>
+						<label><input type="checkbox" name="manufacturer" value="zte">ZTE</label>
+						<label><input type="checkbox" name="manufacturer" value="sony">Sony</label>
+					</div>
+				</div>
+
+				<ul class="products-list">
+
+					<script id="products-template" type="text/x-handlebars-template">​
+						
+						{{#each this}}
+
+							<li data-index="{{id}}">
+
+								<a href="#" class="product-photo"><img src="{{image.small}}" height="130" alt="{{name}}"/></a>
+
+								<h2><a href="#"> {{name}} </a></h2>
+
+								<ul class="product-description">
+									<li><span>Manufacturer: </span>{{specs.manufacturer}}</li>
+									<li><span>Storage: </span>{{specs.storage}} GB</li>
+									<li><span>OS: </span>{{specs.os}}</li>
+									<li><span>Camera: </span>{{specs.camera}} Mpx</li>
+								</ul>
+
+								<button>Buy Now!</button>
+
+								<p class="product-price">{{price}}$</p>
+
+								<div class="highlight"></div>
+
+							</li>
+
+						{{/each}}
+
+					</script> 
+
+				</ul>
+
+			</div>
+
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+		<script src="assets/js/app.js"></script>
+	</body>
+
+</html> 
