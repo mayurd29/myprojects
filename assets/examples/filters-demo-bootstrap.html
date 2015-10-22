@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 col-lg-offset-3">
+      <div ng-app="filters">
+        <div ng-controller="dates">
+          <div class="panel panel-default">
+             <div class="panel-body">
+               <h4 class="text-center">AngularJS Filter - Date</h4>
+               <p><strong>Original:</strong></p>
+               <p>{{dateCommon}}</p>
+               <p><strong>Default Date:</strong></p>
+               <p>{{dateCommon | date}}</p>
+            </div>
+          </div>
+          <div class="panel panel-default">
+             <div class="panel-body">
+               <h4 class="text-center">AngularJS Filter - Full Date</h4>
+               <p><strong>Original:</strong></p>
+               <p>{{dateCommon}}</p>
+               <p><strong>Full Date:</strong></p>
+               <p>{{dateCommon | date:'fullDate'}}</p>
+            </div>
+          </div>
+          <div class="panel panel-default">
+             <div class="panel-body">
+               <h4 class="text-center">AngularJS Filter - Only Year</h4>
+               <p><strong>Original:</strong></p>
+               <p>{{dateCommon}}</p>
+               <p><strong>Just The Year:</strong></p>
+               <p>{{dateCommon | date:'yyyy'}}</p>
+            </div>
+          </div>
+          <div class="panel panel-default">
+             <div class="panel-body">
+               <h4 class="text-center">AngularJS Filter - Date UTC Input, Custom Date Output</h4>
+               <p><strong>Original:</strong></p>
+               <p>{{dateUTC}}</p>
+               <p><strong>Custom Date:</strong></p>
+               <p>{{dateUTC | date:"'Year:' yyyy, 'Month:' MMM, 'Day:' EEEE"}}</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row credits">
+      <div class="col-lg-4 col-lg-offset-4 text-center">
+        <a target="_blank" href="http://www.scotch.io">Read Full Tutorial on Scotch.io</a>
+    </div>
+  </div>
+</div>

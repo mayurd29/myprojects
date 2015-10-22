@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html data-ng-app="myApp">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div data-ng-controller="homeController">
+      <div class="rent">
+        <div class="header">
+          <div class="icon"></div>
+          <div class="title">Appartment Rent</div>
+        </div>
+        <div class="content">
+          <p>{{rent.name}}</p>
+          <p>Total paid for this appartment {{rent.totalPaid}}.</p>
+          <p>{{rent.extraInfo}}</p>
+          <p>{{rent.member}}</p>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/angular.min.js"></script>
+    <script src="recollection/components/home/homeController.js"></script>
+  </body>
+</html>
