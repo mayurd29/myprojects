@@ -1,0 +1,14 @@
+{
+  "creditCards": [
+    {
+      "name": "BankAmericard-4882",
+      "fullName": "BankAmericard Cash Rewards Platinum Plus Visa - 4882",
+      "paymentDetails": [
+        {
+          "paymentDate": "02/26/2015",
+          "amount": 191
+        }
+      ]
+    }
+  ]
+}
